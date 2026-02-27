@@ -89,6 +89,7 @@
             border-radius: 30px;
             padding: 1.8rem;
             box-shadow: inset 0 0 0 2px white;
+            margin-bottom: 1.5rem;
         }
 
         .destacado {
@@ -119,7 +120,7 @@
 
         /* Estilo para la imagen */
         .imagen-bartolo {
-            margin: 2rem auto 1rem;
+            margin: 2rem auto 1.5rem;
             max-width: 280px;
             border-radius: 30px;
             overflow: hidden;
@@ -138,26 +139,36 @@
             border-radius: 24px;
         }
 
-        .firma {
+        /* Decoración centrada */
+        .decoracion-centrada {
+            display: flex;
+            justify-content: center;
+            gap: 0.8rem;
+            margin: 2rem 0 1rem;
+            font-size: 1.8rem;
+            opacity: 0.8;
+        }
+
+        .te-quiero {
+            text-align: center;
+            font-size: 1.8rem;
+            font-family: 'Great Vibes', cursive;
+            background: linear-gradient(135deg, #b57ad4, #8a4db3);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            margin: 1rem 0 0.5rem;
+        }
+
+        .firma-final {
+            text-align: center;
             font-family: 'Great Vibes', cursive;
             font-size: 2.2rem;
             background: linear-gradient(135deg, #b57ad4, #8a4db3);
             -webkit-background-clip: text;
             background-clip: text;
             color: transparent;
-            text-align: right;
-            margin-top: 2rem;
-            padding-top: 1rem;
-            border-top: 2px solid #e0ccff;
-        }
-
-        .decoracion-linea {
-            display: flex;
-            justify-content: center;
-            gap: 0.8rem;
-            margin: 2rem 0 1rem;
-            font-size: 1.4rem;
-            opacity: 0.7;
+            margin-bottom: 0.5rem;
         }
 
         /* Audio oculto */
@@ -169,8 +180,9 @@
             .carta { padding: 2rem 1.2rem; }
             h1 { font-size: 2.8rem; }
             .contenido { font-size: 1.1rem; padding: 1.2rem; }
-            .firma { font-size: 1.9rem; }
             .imagen-bartolo { max-width: 220px; }
+            .te-quiero { font-size: 1.5rem; }
+            .firma-final { font-size: 1.9rem; }
         }
     </style>
 </head>
@@ -197,23 +209,26 @@
             <p>No importa si es de día o de madrugada, si estás feliz o frustrada, si necesitas desahogarte o celebrar un logro: <span class="destacado">yo siempre voy a estar para ti</span>. Puedes escribirme, llamarme o simplemente mirar tus esferas y saber que ahí está también un pedazo de mi cariño, acompañándote siempre.</p>
 
             <p style="margin: 1.5rem 0 0.8rem;">Sigue adelante, mi Bartolita. <span class="destacado">Confío en ti, admiro lo que eres y te quiero muchísimo</span>. No hay examen, ni semestre, ni reto que pueda con esa fuerza que llevas dentro. Y si alguna vez lo dudas, vuelve a leer esto: aquí estoy yo para recordártelo.</p>
-
-            <div class="decoracion-linea">
-                <span>💜</span> <span>✨</span> <span>🌌</span> <span>💜</span> <span>✨</span> <span>🌌</span>
-            </div>
-
-            <p style="text-align: center; font-size: 1.3rem; margin: 1.5rem 0 0;">
-                Te quiero mucho, mi Bartolita. <span style="font-size: 1.8rem;">💛</span>
-            </p>
-
-            <div class="firma">
-                Tu Bartolo 🫶
-            </div>
         </div>
 
-        <!-- Imagen al final (retouch_2024062816065258.jpg) -->
+        <!-- IMAGEN (primero) -->
         <div class="imagen-bartolo">
             <img src="retouch_2024062816065258.jpg" alt="Tu Bartolo">
+        </div>
+
+        <!-- DECORACIÓN (segundo) -->
+        <div class="decoracion-centrada">
+            <span>💜</span> <span>✨</span> <span>🌌</span> <span>💜</span> <span>✨</span> <span>🌌</span>
+        </div>
+
+        <!-- TE QUIERO MUCHO (tercero) -->
+        <div class="te-quiero">
+            Te quiero mucho, mi Bartolita. 💛
+        </div>
+
+        <!-- FIRMA (cuarto) -->
+        <div class="firma-final">
+            ATT     ---Tu Bartolo 🫶
         </div>
     </div>
 
